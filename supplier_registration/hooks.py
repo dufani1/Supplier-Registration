@@ -132,25 +132,10 @@ fixtures = [{
 # web form scripts
 standard_portal_menu_items = [
 
-	{"title": _("Supplier Registration Application"), "route": "/supplier-registration-application", "reference_doctype": "Supplier Registration Application", "role": "Supplier Applicant"},
-
-        {"title": _("Supplier Selection and Assessment"), "route": "/supplier-selection-and-assessment", "reference_doctype": "Supplier Selection and Assessment", "role": "Supplier Applicant"},
+	{"title": _("Supplier Registration Application"), "route": "/supplier-registration-application", "reference_doctype": "Supplier Registration Application", "role": "Supplier"},
 
         {"title": _("Supplier Information Change Request"), "route": "/supplier-information-change-request", "reference_doctype": "Supplier Information Change Request", "role": "Supplier"},
+        ]
 
-        {"title": _("Supplier Profile"), "route": "/supplier-profile", "reference_doctype": "Supplier", "role": "Supplier"},
-        
-        {"title": _("Represented Brand or Company"), "route": "/represented-brand-or-company", "reference_doctype": "Represented Brand or Company", "role": "Supplier"},
-
-]
-
-
-has_website_permission = {
-
-	"Supplier Selection and Assessment": "supplier_registration.supplier_registration.web_form.supplier_selection_and_assessment.supplier_selection_and_assessment.has_website_permission",
-        "Supplier": "supplier_registration.supplier_registration.web_form.supplier_profile.supplier_profile.has_website_permission",
-        "Represented Brand or Company": "supplier_registration.supplier_registration.web_form.represented_brand_or_company.represented_brand_or_company.has_website_permission",
-        	   	
-}
 
 
