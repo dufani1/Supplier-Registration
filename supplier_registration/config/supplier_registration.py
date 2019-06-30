@@ -92,16 +92,6 @@ def get_data():
 				},
                                 
 			]
-		},
-                {
-			"label": _("Setup"),
-			"items": [
-				{
-					"type": "doctype",
-					"name": "Supplier Financial Classification Guide",
-					"description": _("Supplier Financial Classification Guide."),
-				},
-			
-			]
 		}
+              
 	]
