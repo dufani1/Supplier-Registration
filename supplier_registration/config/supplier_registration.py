@@ -25,7 +25,7 @@ def get_data():
 			]
 		},
                 {
-			"label": _("Registered Suppliers"),
+			"label": _("Approved Suppliers"),
 			"items": [
 				{
 					"type": "doctype",

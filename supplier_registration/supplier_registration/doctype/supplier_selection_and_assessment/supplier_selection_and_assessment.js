@@ -34,30 +34,44 @@ frappe.ui.form.on("Supplier Selection and Assessment", {
     }
 });
 
-// update and save in other documents when submit
+// update and save in other documents when submit (status is rejected)
 
 frappe.ui.form.on("Supplier Selection and Assessment", {
     on_submit : function(frm) {
-        if (frm.doc.s_r_status=="Approved" || frm.doc.s_r_status=="Rejected"){
+        if (frm.doc.s_r_status=="Rejected"){
         frappe.call({
             "method": "frappe.client.set_value",
             "args": {
                 "doctype": "Supplier Registration Application",
                 "name": frm.doc.supplier_registration_application,
-                "fieldname": "status",
-                "value": frm.doc.s_r_status
+                "fieldname": {
+                "status" : frm.doc.s_r_status,
+                "reasons_for_rejection" : frm.doc.reasons_for_rejection
+                   },
+                  }
+        });
+    }
+   }
+});
+
+// update and save in other documents when submit (status is approved)
+
+frappe.ui.form.on("Supplier Selection and Assessment", {
+    on_submit : function(frm) {
+        if (frm.doc.s_r_status=="Approved"){
+        frappe.call({
+            "method": "frappe.client.set_value",
+            "args": {
+                "doctype": "Supplier Registration Application",
+                "name": frm.doc.supplier_registration_application,
+                "fieldname": {
+                "status" : frm.doc.s_r_status
+                   },
                    }
         });
     }
    }
 });
-//fetch from regisraton application
-cur_frm.add_fetch("supplier_registration_application", "full_name_organization", "organization_name");
-cur_frm.add_fetch("supplier_registration_application", "contact_person_email", "contact_person_email");
-cur_frm.add_fetch("supplier_registration_application", "organization_email_address", "organization_email");
-cur_frm.add_fetch("supplier_registration_application", "user_email", "user_email");
-cur_frm.add_fetch("supplier_registration_application", "preferred_correspondence_language", "preferred_correspondence_language");
-cur_frm.add_fetch("supplier_registration_application", "business_registration_type", "business_registration_type");
 
 
 

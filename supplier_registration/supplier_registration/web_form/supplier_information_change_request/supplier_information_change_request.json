@@ -5,7 +5,7 @@
  "allow_edit": 1, 
  "allow_incomplete": 0, 
  "allow_multiple": 1, 
- "allow_print": 0, 
+ "allow_print": 1, 
  "amount": 0.0, 
  "amount_based_on_field": 0, 
  "creation": "2019-01-03 10:06:50.950501", 
@@ -18,7 +18,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 5, 
- "modified": "2019-01-15 14:33:59.036484", 
+ "modified": "2019-07-03 09:50:28.437574", 
  "modified_by": "Administrator", 
  "module": "Supplier Registration", 
  "name": "supplier-information-change-request", 
@@ -26,12 +26,14 @@
  "payment_button_label": "Buy Now", 
  "published": 1, 
  "route": "supplier-information-change-request", 
+ "show_in_grid": 1, 
  "show_sidebar": 1, 
  "sidebar_items": [], 
  "success_url": "/supplier-information-change-request", 
  "title": "Supplier Information Change Request", 
  "web_form_fields": [
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "status", 
    "fieldtype": "Select", 
    "hidden": 0, 
@@ -40,58 +42,69 @@
    "max_value": 0, 
    "options": "Open\nCompleted", 
    "read_only": 1, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
-   "fieldname": "supplier", 
+   "allow_read_on_all_link_options": 0, 
+   "fieldname": "supplier_registration_no", 
    "fieldtype": "Link", 
    "hidden": 0, 
-   "label": "Supplier", 
+   "label": "Supplier Registration No", 
    "max_length": 0, 
    "max_value": 0, 
-   "options": "Supplier", 
-   "read_only": 1, 
-   "reqd": 0
+   "options": "Supplier Registration Application", 
+   "read_only": 0, 
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "", 
    "fieldtype": "Column Break", 
    "hidden": 0, 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
-   "fieldname": "contact", 
-   "fieldtype": "Link", 
+   "allow_read_on_all_link_options": 0, 
+   "fieldname": "supplier", 
+   "fieldtype": "Data", 
    "hidden": 0, 
-   "label": "Contact", 
+   "label": "Supplier", 
    "max_length": 0, 
    "max_value": 0, 
-   "options": "Contact", 
    "read_only": 1, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "description_of_information_to_be_updated", 
    "fieldtype": "Text", 
    "hidden": 0, 
@@ -99,18 +112,22 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 1
+   "reqd": 1, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
+   "allow_read_on_all_link_options": 0, 
    "fieldname": "attachments", 
    "fieldtype": "Attach", 
    "hidden": 0, 
@@ -118,18 +135,20 @@
    "max_length": 0, 
    "max_value": 0, 
    "read_only": 0, 
-   "reqd": 0
+   "reqd": 0, 
+   "show_in_filter": 0
   }, 
   {
-   "default": "1", 
-   "fieldname": "via_customer_portal", 
+   "allow_read_on_all_link_options": 0, 
+   "fieldname": "created_via_portal", 
    "fieldtype": "Check", 
    "hidden": 1, 
    "label": "Via portal", 
    "max_length": 0, 
    "max_value": 0, 
-   "read_only": 1, 
-   "reqd": 0
+   "read_only": 0, 
+   "reqd": 0, 
+   "show_in_filter": 0
   }
  ]
 }
