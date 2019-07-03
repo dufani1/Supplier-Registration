@@ -18,7 +18,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 5, 
- "modified": "2019-07-03 11:37:54.946044", 
+ "modified": "2019-07-03 16:25:46.150122", 
  "modified_by": "Administrator", 
  "module": "Supplier Registration", 
  "name": "supplier-registration-application", 
@@ -97,12 +97,12 @@
   {
    "allow_read_on_all_link_options": 0, 
    "fieldname": "business_registration_type", 
-   "fieldtype": "Select", 
+   "fieldtype": "Link", 
    "hidden": 0, 
    "label": "Registration Type", 
    "max_length": 0, 
    "max_value": 0, 
-   "options": "\nDomestic\nForeign", 
+   "options": "Supplier Group", 
    "read_only": 0, 
    "reqd": 0, 
    "show_in_filter": 0

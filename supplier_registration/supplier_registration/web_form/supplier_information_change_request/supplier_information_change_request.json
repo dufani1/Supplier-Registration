@@ -18,7 +18,7 @@
  "is_standard": 1, 
  "login_required": 1, 
  "max_attachment_size": 5, 
- "modified": "2019-07-03 09:50:28.437574", 
+ "modified": "2019-07-03 16:07:59.525462", 
  "modified_by": "Administrator", 
  "module": "Supplier Registration", 
  "name": "supplier-information-change-request", 
@@ -61,10 +61,10 @@
    "fieldname": "supplier_registration_no", 
    "fieldtype": "Link", 
    "hidden": 0, 
-   "label": "Supplier Registration No", 
+   "label": "Supplier Registration No.", 
    "max_length": 0, 
    "max_value": 0, 
-   "options": "Supplier Registration Application", 
+   "options": "Supplier", 
    "read_only": 0, 
    "reqd": 0, 
    "show_in_filter": 0
@@ -88,7 +88,7 @@
    "label": "Supplier", 
    "max_length": 0, 
    "max_value": 0, 
-   "read_only": 1, 
+   "read_only": 0, 
    "reqd": 0, 
    "show_in_filter": 0
   }, 
@@ -140,6 +140,7 @@
   }, 
   {
    "allow_read_on_all_link_options": 0, 
+   "default": "1", 
    "fieldname": "created_via_portal", 
    "fieldtype": "Check", 
    "hidden": 1, 
