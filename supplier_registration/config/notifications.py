@@ -12,7 +12,10 @@ def get_notification_config():
 				"status":("in",("Open", "Awaiting Original Documents", "Under Review"))
 				},
                         "Supplier Information Change Request": {
-			"status":"Open"
+			        "status":"Open"
+				},
+                          "Represented Brand or Company": {
+			        "status":"Expired"
 				}
 			},
 	}

@@ -9,7 +9,7 @@ def get_data():
 				{
 					"type": "doctype",
 					"name": "Supplier Registration Application",
-					"description": _("Supplier Registration Application."),
+					"description": _("Supplier Registration Application"),
 				},
 				
 			]
@@ -20,7 +20,7 @@ def get_data():
 				{
 					"type": "doctype",
 					"name": "Supplier Selection and Assessment",
-					"description": _("Supplier Selection and Assessment."),
+					"description": _("Supplier Selection and Assessment"),
 				},
 			]
 		},
@@ -30,12 +30,12 @@ def get_data():
 				{
 					"type": "doctype",
 					"name": "Supplier",
-					"description": _("Supplier."),
+					"description": _("Supplier"),
 				},
                                 {
 					"type": "doctype",
 					"name": "Represented Brand or Company",
-					"description": _("Represented Brand or Company."),
+					"description": _("Represented Brand or Company"),
 				},
 
 			]
@@ -46,7 +46,7 @@ def get_data():
 				{
 					"type": "doctype",
 					"name": "Supplier Information Change Request",
-					"description": _("Supplier Information Change Request."),
+					"description": _("Supplier Information Change Request"),
 				},
 
 			]
@@ -57,12 +57,12 @@ def get_data():
 				{
 					"type": "doctype",
 					"name": "Supplier Performance Evaluation",
-					"description": _("Supplier Performance Evaluation."),
+					"description": _("Supplier Performance Evaluation"),
 				},
 				{
 					"type": "doctype",
 					"name": "Supplier Performance Evaluation Template",
-					"description": _("Supplier Performance Evaluation Template."),
+					"description": _("Supplier Performance Evaluation Template"),
 				},
 			]
 		},
@@ -91,6 +91,21 @@ def get_data():
 					"doctype": "Supplier Registration Application"
 				},
                                 
+			]
+		},
+                  {
+			"label": _("Setup"),
+			"items": [
+				{
+					"type": "doctype",
+					"name": "Supplier Offered Service",
+					"description": _("Supplier Offered Service"),
+				},
+				{
+					"type": "doctype",
+					"name": "Supplier Offered Service Group",
+					"description": _("Supplier Offered Service Group"),
+				},
 			]
 		}
               
