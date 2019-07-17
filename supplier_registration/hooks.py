@@ -130,12 +130,6 @@ fixtures = [{
 	}}]
 
 # web form scripts
-standard_portal_menu_items = [
-
-	{"title": _("Supplier Registration Application"), "route": "/supplier-registration-application", "reference_doctype": "Supplier Registration Application", "role": "Supplier"},
-
-        {"title": _("Supplier Information Change Request"), "route": "/supplier-information-change-request", "reference_doctype": "Supplier Information Change Request", "role": "Supplier"},
-        ]
 
 
 
