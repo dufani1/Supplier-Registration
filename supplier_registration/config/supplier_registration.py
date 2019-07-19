@@ -67,33 +67,6 @@ def get_data():
 			]
 		},
                 {
-			"label": _("Related Reports"),
-			"items": [
-				
-				{
-					"type": "report",
-					"name": "Approved Suppliers Report",
-					"doctype": "Supplier"
-				},
-                                {
-					"type": "report",
-					"name": "Represented Brands or Companies Report",
-					"doctype": "Represented Brand or Company"
-				},
-                                {
-					"type": "report",
-					"name": "Supplier Selection and Assessments Report",
-					"doctype": "Supplier Selection and Assessment"
-				},
-                                {
-					"type": "report",
-					"name": "Supplier Registration Applications Report",
-					"doctype": "Supplier Registration Application"
-				},
-                                
-			]
-		},
-                  {
 			"label": _("Setup"),
 			"items": [
 				{
