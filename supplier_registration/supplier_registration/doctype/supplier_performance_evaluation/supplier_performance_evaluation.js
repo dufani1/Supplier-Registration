@@ -68,15 +68,15 @@ frappe.ui.form.on("Supplier Performance Evaluation", "before_submit", function(f
     }
 });
 
-// Fetching Child Tables Template without button
+// Fetching Child Tables Template with button
 frappe.ui.form.on("Supplier Performance Evaluation", "insert_template", function(frm) {
 frappe.model.with_doc("Supplier Performance Evaluation Template", frm.doc.supplier_performance_evaluation_template, function() {
 var tabletransfer= frappe.model.get_doc("Supplier Performance Evaluation Template", frm.doc.supplier_performance_evaluation_template)
-$.each(tabletransfer.performance_evaluation_template_table, function(index, row){
-d = frm.add_child("table_6");
-d.supplier_evaluation_criteria = row.supplier_evaluation_criteria;
-d.max_evaluation = row.max_evaluation;
-cur_frm.refresh_field("table_6");
+$.each(tabletransfer.performance_evaluation_template_table, function(v, row){
+ v = frm.add_child("table_6");
+ v.supplier_evaluation_criteria = row.supplier_evaluation_criteria;
+ v.max_evaluation = row.max_evaluation;
+ cur_frm.refresh_field("table_6");
 })
 });
 });
